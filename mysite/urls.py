@@ -16,13 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from polls.views import index
-
 urlpatterns = [
     path('polls/', include('polls.urls')),
-
-    path('', index),
-    path('polls/', index),
-
-    path('admin/', admin.site.urls),
 ]
